@@ -1,13 +1,11 @@
 
-
-
+import { Gestor } from "./components/Gestor"
 function App() {
-
 
   return (
     <>
-    hola
-
+    
+        <Gestor></Gestor>
   </>
   )
 }

@@ -1,0 +1,70 @@
+*{
+    background-color: rgb(27, 27, 27);
+}
+.cash{
+    width: 600px;
+    height: 200px;
+    border: solid white 1px;
+    margin: 0px auto;
+    background: #1f1f8f;
+background: linear-gradient(90deg, rgba(31, 31, 143, 1) 2%, rgba(8, 8, 84, 1) 62%, rgba(12, 60, 138, 1) 100%);
+ border-radius: 10px;
+}
+.bi-cash-stack{
+    color: white;
+    margin: 0px 10px;
+    background-color: #1f1f8f;
+    font-size: 30px;
+}
+.money{
+    background: linear-gradient(90deg, rgba(31, 31, 143, 1) 2%, rgba(8, 8, 84, 1) 62%, rgba(12, 60, 138, 1) 100%);
+  background: #0b0b69; 
+  width: 50px;
+  font-size: 30px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  margin: 30px auto;
+}
+.container{
+    margin: 10px auto;
+    color: white;
+    width:620px;
+
+    display: flex;
+    flex-direction: column;
+}
+.container>input{
+    margin: 10px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(80, 77, 77);
+}
+.container > input::placeholder {
+  color: lightgray; 
+  opacity: 1; 
+  font-size: 20px;
+  font-weight: 500;        
+}
+/* button */
+.ingreso{
+    color: white;
+    background-color: rgb(15, 80, 165);
+    font-weight: bold;
+    border: none;
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+     margin: 10px;
+}
+.gasto{
+    margin: 10px;
+    color: white;
+    background-color: rgb(116, 69, 202);
+    font-weight: bold;
+    border: none;
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+}
