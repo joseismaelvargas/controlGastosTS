@@ -68,3 +68,27 @@ background: linear-gradient(90deg, rgba(31, 31, 143, 1) 2%, rgba(8, 8, 84, 1) 62
     height: 50px;
     border-radius: 10px;
 }
+/* historial */
+.h-gasto{
+    background-color: rgb(22, 22, 22);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 6px;
+}
+.money-g{
+ background-color: rgb(22, 22, 22);
+ font-size: 23px;
+ color: #5299f5;font-weight: bold;
+}
+.p-g{
+    background-color: rgb(22, 22, 22);
+    font-size: 20px;
+    color: rgb(177, 170, 170);
+}
+.money-i{
+     background-color: rgb(22, 22, 22);
+ font-size: 23px;
+ color: #682ea1;font-weight: bold;
+}
