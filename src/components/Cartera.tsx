@@ -17,6 +17,7 @@ export const Cartera = () => {
     setAccountToStorage(account)
 
    }
+   console.log(account)
    setCash(account)
 },[])
    console.log(cash)
