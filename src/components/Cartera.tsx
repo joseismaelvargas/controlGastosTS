@@ -5,6 +5,7 @@ import "../components/style/gestor.css"
 
 export const Cartera = () => {
     const [cash,setCash]=useState<Account|null>(null)
+ 
   useEffect(()=>{
     let account:Account;
    const InitialAccount=getAccountFronStorage();
@@ -46,7 +47,7 @@ export const Cartera = () => {
                <i className="bi bi-cash-stack text-white"></i>
                <div className="money">
                 {
-                    cash?<p className="money">{cash.balance}$</p>:<p>....cargando </p>
+                    cash?<p className="money">{cash.getBalance()}$</p>:<p>....cargando </p>
                 }
                </div>
         </div>
