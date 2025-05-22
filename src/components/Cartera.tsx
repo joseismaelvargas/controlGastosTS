@@ -1,5 +1,5 @@
 import { Account,Entry,CategoryEnum } from "../helpers/Account"
-import React,{useState,useEffect} from "react"
+import {useState,useEffect} from "react"
 import "../components/style/gestor.css"
 
 

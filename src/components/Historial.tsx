@@ -1,6 +1,6 @@
 import { Account,Entry,CategoryEnum} from "../helpers/Account"
-import React,{useState,useEffect} from "react"
-import Swal from "sweetalert2"
+import {useState,useEffect} from "react"
+
 import "./style/gestor.css"
 const Historial = () => {
 
@@ -11,7 +11,7 @@ useEffect(()=>{
  if(storageaccount){
    const pasedaccount=JSON.parse(storageaccount)
    const accounte= new Account(pasedaccount); 
-      setGasto(accounte.entries || []);
+      setGasto(accounte.getEntries() || []);
  }
   
 
