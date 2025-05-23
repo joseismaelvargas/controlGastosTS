@@ -14,23 +14,15 @@ export const Cartera = () => {
      account=new Account(InitialAccount as Account)
      
    }else{
-    account=createInitialAccount();
+
     setAccountToStorage(account)
 
    }
-   console.log(account)
+
    setCash(account)
 },[])
-   console.log(cash)
-    function createInitialAccount():Account{
-         const septupaccount=new Account()
 
-         const exampleejemplo=new Entry('Ejemplo de gasto',180,CategoryEnum.expense)
-         const Incomejemplo=new Entry('Ejemplo de ingreso',200,CategoryEnum.income)
-         septupaccount.addEntry(exampleejemplo)
-         septupaccount.addEntry(Incomejemplo)
-           return septupaccount
-        }
+   
 
         function getAccountFronStorage():Account|boolean{
           
@@ -47,7 +39,7 @@ export const Cartera = () => {
                <i className="bi bi-cash-stack text-white"></i>
                <div className="money">
                 {
-                    cash?<p className="money">{cash.getBalance()}$</p>:<p>....cargando </p>
+                    cash?<p className="money">{cash.getBalance().toFixed(2)}$</p>:<p>....cargando </p>
                 }
                </div>
         </div>

@@ -1,14 +1,25 @@
 import "../components/style/gestor.css"
 import { useState } from "react"
 import { Account, CategoryEnum, Entry } from "../helpers/Account"
+import Swal from "sweetalert2"
 export const NuevaEntrada = () => {
     const [concepto,setconcepto]=useState<string>("")
-     const [cantidad,setCantidad]=useState<string>()
+     const [cantidad,setCantidad]=useState<string>("")
      const añadirIngreso=()=>{
+ 
+        if(!concepto){
+ Swal.fire("Introdusca el concepto por favor");
+            return 
+        } 
+        
+        if(!cantidad){
+ Swal.fire("Introdusca la cantida por favor");
+            return 
+        } 
       const storage=localStorage.getItem('account')
       if(storage){
         const parse=new Account(JSON.parse(storage))
-         console.log(parse)
+   
       const nuevaCuenta:Entry={
         id:Date.now(),
         concept:concepto,
@@ -26,8 +37,19 @@ location.reload()
    
      }
      const añadirGasto=()=>{
-         const storage=localStorage.getItem('account')
-       if(storage){
+        
+       
+        if(!concepto){
+ Swal.fire("Introdusca el concepto por favor");
+            return 
+        }
+           
+        if(!cantidad){
+ Swal.fire("Introdusca la cantida por favor");
+            return 
+        }  
+        const storage=localStorage.getItem('account')
+  if(storage){
         const parse=new Account(JSON.parse(storage))
          console.log(parse)
       const nuevaCuenta:Entry={

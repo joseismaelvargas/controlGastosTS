@@ -52,12 +52,12 @@ const filteringreso=gasto.filter((item)=>item.category===CategoryEnum.income)
             <h4>Historial</h4>
             {
               filtergasto.map((entry,index)=>(
-                <div key={index} className="h-gasto"><p className="p-g">{entry.concept}</p> <p className="money-g">{entry.amount}$ </p> <i className="bi bi-x-octagon" onClick={()=>eliminargasto(entry.id)}></i></div>
+                <div key={index} className="h-gasto"><p className="p-g">{entry.concept}</p> <p className="money-g">{entry.amount.toFixed(2)}$ </p> <i className="bi bi-x-octagon" onClick={()=>eliminargasto(entry.id)}></i></div>
               ))
             }
                {
              filteringreso.map((entry,index)=>(
-               <div className="h-gasto" key={index}><p className="p-g">{entry.concept}</p> <p className="money-i">{entry.amount}$</p> <i className="bi bi-x-octagon" onClick={()=>eliminaringreso(entry.id)}></i></div>
+               <div className="h-gasto" key={index}><p className="p-g">{entry.concept}</p> <p className="money-i">{entry.amount.toFixed(2)}$</p> <i className="bi bi-x-octagon"  onClick={()=>eliminaringreso(entry.id)}></i></div>
               ))
             }
             
