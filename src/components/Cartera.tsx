@@ -1,4 +1,4 @@
-import { Account,Entry,CategoryEnum } from "../helpers/Account"
+import { Account} from "../helpers/Account"
 import {useState,useEffect} from "react"
 import "../components/style/gestor.css"
 
@@ -7,7 +7,7 @@ export const Cartera = () => {
     const [cash,setCash]=useState<Account|null>(null)
  
   useEffect(()=>{
-    let account:Account;
+    let account=new Account;
    const InitialAccount=getAccountFronStorage();
 
    if(InitialAccount){
